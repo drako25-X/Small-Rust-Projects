@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug playground",
+      "cargo": {
+        "args": ["build", "--bin=playground", "--package=playground"],
+        "filter": { "name": "playground", "kind": "bin" }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
